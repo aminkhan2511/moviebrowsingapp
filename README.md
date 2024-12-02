@@ -99,15 +99,32 @@ https://github.com/user-attachments/assets/9ab51573-7ff7-4066-a738-5858355a2ae2
 
 ---
 
-## Potential Enhancements
-1. **Search Functionality:**
-   - Enable users to search for movies by title or keywords.
+# Architecture: MVVM (Model-View-ViewModel)
 
-2. **Favorites/Bookmarks:**
-   - Allow users to save and manage their favorite movies.
+This app is built using the MVVM (Model-View-ViewModel) architecture pattern, which ensures a clean separation of concerns and facilitates testability and scalability.
 
-3. **Pagination:**
-   - Handle large datasets from the API with efficient pagination.
+## Key Components
+
+### Model
+- Handles the data layer of the app.
+- Fetches movie-related data from the API using Retrofit.
+- Provides data to the ViewModel via repositories.
+
+### View
+- Represents the UI layer, such as Activity and Fragment.
+- Observes data changes exposed by the ViewModel using LiveData.
+- Displays movie details like posters, trailers, and descriptions.
+
+### ViewModel
+- Acts as a bridge between the Model and View.
+- Contains logic to fetch and manage movie data via the repository.
+- Exposes data using LiveData, ensuring lifecycle-aware updates.
+
+## Advantages of Using MVVM
+- **Separation of Concerns**: Keeps UI logic out of the Activity/Fragment, improving maintainability.
+- **Lifecycle Awareness**: With LiveData, the UI reacts only when it is in a proper state.
+- **Testability**: ViewModel logic can be easily unit-tested without involving the UI.
+- **Scalability**: Suitable for larger apps with complex UI and data management needs.
 
 ---
 
