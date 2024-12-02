@@ -67,12 +67,29 @@ https://github.com/user-attachments/assets/9ab51573-7ff7-4066-a738-5858355a2ae2
 
 ---
 
-## Build and Run Process
+## Build Requirements
 
-### Steps to Build the Project
-1. **Ensure Environment Setup:**
-   - Android Studio with SDKs for API level 24 (minimum) and API level 35 (compile and target).
-   - Gradle version aligned with project configuration.
+To build and run this project, ensure you have the following:
+
+- **Java JDK:** 8 or higher  
+  Required to compile the project and run Android Studio.
+
+- **Gradle Version:** 8.0 or higher  
+  Used as the build automation tool for this project.
+
+- **Android Gradle Plugin Version:** 8.1.0  
+  Works with Gradle to build and package the Android application.
+
+- **Kotlin JVM Target:** 1.8  
+  Ensures compatibility with Kotlin features used in the project.
+
+- **Minimum SDK Version:** 24 (Android 7.0)  
+  The lowest version of Android supported by this app.
+
+- **Target SDK Version:** 35  
+  Utilizes the latest Android APIs for the best compatibility.
+ 
+   - 
 
 2. **Dependencies:**
    - All required libraries are declared in the `build.gradle` file.
