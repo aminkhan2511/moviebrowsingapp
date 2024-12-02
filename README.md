@@ -15,6 +15,14 @@ A modern Android app to browse movies, view details, watch trailers, and explore
    - User-friendly interface designed with Material Design and ViewPager2 for smooth navigation.
 
 ---
+https://github.com/user-attachments/assets/9ab51573-7ff7-4066-a738-5858355a2ae2
+
+![WhatsApp Image 2024-12-02 at 01 02 59_3f4069c3]
+(https://github.com/user-attachments/assets/a050e7c4-ac21-4c41-92ea-6c9
+![WhatsApp Image 2024-12-02 at 01 02 59_ff869d4e](https://github.com/user-attachments/assets/986eddb7-9e3c-471b-9489-a5d086572b75)
+15f1c957f)
+![WhatsApp Image 2024-12-02 at 01 02 58_e84e8271](https://github.com/user-attachments/assets/5fb1e1f6-1b12-47b8-a107-9932af005d1c)
+![WhatsApp Image 2024-12-02 at 01 03 00_be649b8b](https://github.com/user-attachments/assets/50f19bbf-d865-44b9-9ed5-d9a484aad3aa)
 
 ## Libraries and Their Justifications
 
@@ -32,6 +40,9 @@ A modern Android app to browse movies, view details, watch trailers, and explore
 1. **Retrofit and OkHttp:**
    - **Retrofit:** Simplifies HTTP API calls for fetching movie data.
    - **Gson Converter:** Parses JSON responses into Kotlin/Java objects.
+
+
+
    - **OkHttp Logging Interceptor:** Logs HTTP requests and responses for debugging.
 
 ### Image Loading
