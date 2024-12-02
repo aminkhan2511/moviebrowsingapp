@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:background="@color/colorprimary_theme"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linlayHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/trending_movie_item_list"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.2"
+        >
+
+
+
+        <!-- TabLayout for Tab 1 and Tab 2 -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linlayHome"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="4dp"
+            android:background="@android:color/transparent"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@android:color/darker_gray" />
+
+        <!-- ViewPager2 for switching between tabs -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayoutHome" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fullScreenFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>
